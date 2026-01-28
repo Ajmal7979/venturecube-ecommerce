@@ -26,11 +26,17 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://venturecube-ecommerce.vercel.app/"
+      "https://venturecube-ecommerce.vercel.app",
+      "https://venturecube-ecommerce-git-main-ajmal7979s-projects.vercel.app",
     ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
+
+// ✅ EXPRESS 5 FIX (do not use "*")
+app.options(/.*/, cors());
+
 
 
 
