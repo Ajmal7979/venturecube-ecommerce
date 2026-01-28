@@ -1,0 +1,104 @@
+.checkout-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.checkout-card {
+  width: 100%;
+  max-width: 720px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.checkout-title {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.checkout-subtitle {
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field label {
+  font-size: 14px;
+  opacity: 0.85;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 20, 35, 0.7);
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border: 1px solid rgba(100, 120, 255, 0.8);
+  box-shadow: 0 0 0 3px rgba(100, 120, 255, 0.18);
+}
+
+.field textarea {
+  min-height: 90px;
+  resize: none;
+  
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+
+.checkout-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  background: #5b5ff0;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-2px);
+  background: #6c70ff;
+}
+
+/* ✅ responsive */
+@media (max-width: 720px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,59 @@
+.ordersPage {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+  color: #fff;
+}
+
+.orderCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 16px;
+  backdrop-filter: blur(10px);
+}
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.orderId {
+  font-weight: 600;
+  font-size: 18px;
+}
+.orderDate {
+  font-size: 14px;
+  color: #ccc;
+}
+.orderItems {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+}
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+}
+.itemName {
+  font-weight: 500;
+  font-size: 16px;
+}
+.itemQuantity {
+  font-size: 14px;
+  color: #aaa;
+}
+.itemPrice {
+  font-weight: 600;
+  font-size: 16px;
+}
+.orderTotal {
+  text-align: right;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 12px;
+}

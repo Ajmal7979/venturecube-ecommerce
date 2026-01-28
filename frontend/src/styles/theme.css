@@ -1,0 +1,25 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --primary: #6366f1;
+  --secondary: #22d3ee;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --danger: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}

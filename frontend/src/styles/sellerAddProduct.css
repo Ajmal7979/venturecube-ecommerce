@@ -1,0 +1,104 @@
+.sellerAddPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 18px;
+}
+
+.sellerAddCard {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(15, 20, 35, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.sellerAddTitle {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.sellerAddSub {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.sellerAddForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sellerAddForm label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 8px;
+}
+
+.sellerAddForm input,
+.sellerAddForm select,
+.sellerAddForm textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #0b33c5;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s ease;
+  
+}
+
+.sellerAddForm input:focus,
+.sellerAddForm select:focus,
+.sellerAddForm textarea:focus {
+  border-color: rgba(125, 138, 255, 0.7);
+  box-shadow: 0 0 0 3px rgba(125, 138, 255, 0.2);
+}
+
+.sellerAddForm textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.sellerAddRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.sellerAddBtn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #6f7cff, #5865f2);
+  color: white;
+  font-weight: 700;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sellerAddBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(88, 101, 242, 0.35);
+}
+
+@media (max-width: 650px) {
+  .sellerAddCard {
+    padding: 22px;
+  }
+  .sellerAddRow {
+    grid-template-columns: 1fr;
+  }
+}

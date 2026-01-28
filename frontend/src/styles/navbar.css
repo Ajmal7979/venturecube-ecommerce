@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: var(--card);
+  align-items: center;
+}
+
+.links a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.links button {
+  margin-left: 20px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.links button:hover {
+  background: var(--secondary);
+}
