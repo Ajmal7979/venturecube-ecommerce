@@ -24,7 +24,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://YOUR-VERCEL-FRONTEND-URL.vercel.app"
+      "https://venturecube-ecommerce.vercel.app/"
     ],
     credentials: true,
   })
