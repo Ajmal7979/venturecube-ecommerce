@@ -22,14 +22,15 @@ app.use(cookieParser());
 
 const cors = require("cors");
 
-app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://venturecube-ecommerce.vercel.app",
-    "https://venturecube-ecommerce-*.vercel.app"
-  ],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://venturecube-ecommerce.vercel.app/"
+    ],
+    credentials: true,
+  })
+);
 
 
 
