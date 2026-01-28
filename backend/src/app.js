@@ -20,15 +20,17 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://venturecube-ecommerce.vercel.app/"
-    ],
-    credentials: true,
-  })
-);
+const cors = require("cors");
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://venturecube-ecommerce.vercel.app",
+    "https://venturecube-ecommerce-*.vercel.app"
+  ],
+  credentials: true
+}));
+
 
 
 
