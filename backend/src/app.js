@@ -24,11 +24,12 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      process.env.CLIENT_URL, // ✅ production frontend url
+      "https://YOUR-VERCEL-FRONTEND-URL.vercel.app"
     ],
     credentials: true,
   })
 );
+
 
 
 app.use("/api/auth", authRoutes);

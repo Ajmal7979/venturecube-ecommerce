@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://venturecube-ecommerce.onrender.com/api" || "http://localhost:5000",
+  baseURL: "https://venturecube-ecommerce.onrender.com/api", // ✅ Render backend URL
   withCredentials: true,
 });
 
