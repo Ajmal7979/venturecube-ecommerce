@@ -37,7 +37,6 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/addresses", addressRoutes);
 app.use("/api/admin", adminRoutes);
-app.use("/api/orders", orderRoutes);
 app.use("/api/seller", sellerRoutes);
 app.use("/api/chat", chatRoutes);
 
