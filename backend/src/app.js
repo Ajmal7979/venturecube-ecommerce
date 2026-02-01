@@ -24,12 +24,11 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://venturecube-ecommerce.vercel.app/"
+      process.env.CLIENT_URL, // ✅ production frontend url
     ],
     credentials: true,
   })
 );
-
 
 
 app.use("/api/auth", authRoutes);
